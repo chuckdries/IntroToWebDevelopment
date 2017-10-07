@@ -61,3 +61,5 @@ These are additional topics I want to cover or feel like needed more depth. I ca
  I'm really excited about this class, and so far I've just been answering questions on Discord DMs. I'm happy to set up a slack or discord server and schedule regular twitch office hours if people are interested. For now, if you have a question, my contact info is in my twitch profile, but you should raise an issue in this repo so others can benefit from the answers.
  
  This whole course is very experimental, thank you for your patience and thank you for your feedback! I can't wait to see what this becomes.
+
+`*`Phoenix time is MST, but we don't observe Daylight Savings time. Frankly I've lived here my whole life so I have no idea when we're synced with MST and when we're synced with PST, so you should google it.
