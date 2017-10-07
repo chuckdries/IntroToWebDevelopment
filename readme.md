@@ -3,9 +3,9 @@ Welcome to Intro to Web Development, Twitch Edition
 Main lessons happen saturdays at 9am MST (Phoenix time)
 Appendices and supplemental lessons happen on Sundays or throughout the week.
 
-## Planned Lessons
+## Lessons
 1. Basic HTML and CSS (10/7)
-    - https://www.twitch.tv/videos/180406932 (YT coming soon)
+    https://www.twitch.tv/videos/180406932 (YT coming soon)
     1. Basic basic HTML: What is HTML? What is a tag? What is an attribute?
     2. Essential tags: head, title, h1-h6, p, div, a
     3. CSS basics: ID, Class, changing font sizes and colors
