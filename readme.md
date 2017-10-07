@@ -1,5 +1,5 @@
-# Course Overview
-Welcome to Intro to Web Development, Twitch Edition  
+# Welcome
+to ***Intro to Web Development, Twitch Edition***  
 Tune in for primary lessons Saturdays at 9am MST (Phoenix time)* at http://twitch.tv/chuckletmilk  
 Appendices, office hours, and supplemental lessons happen on Sundays or throughout the week.
 
