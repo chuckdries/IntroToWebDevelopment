@@ -6,24 +6,25 @@ Appendices and supplemental lessons happen on Sundays or throughout the week.
 ## Lessons
 1. Basic HTML and CSS (10/7)  
     https://www.twitch.tv/videos/180406932 (YT coming soon)
-    1. Basic basic HTML: What is HTML? What is a tag? What is an attribute?
-    2. Essential tags: head, title, h1-h6, p, div, a
-    3. CSS basics: ID, Class, changing font sizes and colors
-    4. Tooling: The command line interface, VSCode, Node, NPM, lite-server
-    5. Getting Help: MDN
-    6. More tags: Head, Link, Meta, span, ul, li, img
-    7. Using the Web Inspector to debug and learn
-    8. Q&A
+    - Basic basic HTML: What is HTML? What is a tag? What is an attribute?
+    - Essential tags: head, title, h1-h6, p, div, a
+    - CSS basics: ID, Class, changing font sizes and colors
+    - Tooling: The command line interface, VSCode, Node, NPM, lite-server
+    - Getting Help: MDN
+    - More tags: Head, Link, Meta, span, ul, li, img
+    - Using the Web Inspector to debug and learn
+    - Q&A
 2. Advanced HTML and Basic client side JavaScript
-    1. Hello world and console use
-    2. Variables and arithmetic
-    3. Control Flow
-    4. Functions
-    5. Using git for version control and hosting your static site with Github Pages
-    6. Q&A
+    - Hello world and console use
+    - Variables and arithmetic
+    - Control Flow
+    - Functions
+    - DOM manipulation
+    - Using git for version control and hosting your static site with Github Pages
+    - Q&A
 3. Client-Server communication, Node, get&put, templating
-    1. TBD
-    2. Split into multiple lessons?
+    - TBD
+    - Split into multiple lessons?
 
 ## Potential lesson topics for the future:
  - Intro to a front end framework (Most likely VueJS)
