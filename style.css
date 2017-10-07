@@ -1,0 +1,12 @@
+body {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 1.5;
+    background: #eeeeee;
+    color: #333333;
+}
+
+img {
+    max-width: 600px;
+}
