@@ -18,9 +18,19 @@ https://www.twitch.tv/videos/180406932
   - More tags: Head, Link, Meta, span, ul, li, img
   - Using the Web Inspector to debug and learn
   - Q&A  
-
-### 2. Basic client side JavaScript
+### 2. Advanced CSS & Layout Techniques
+This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.
+  - Common layout patterns
+  - CSS `position` property
+  - CSS flexbox
+  - CSS grid
+  - CSS Preprocessors
+  - CSS Frameworks
+  - More practice making layouts from the real world
+  - Other TBD
+### 3. Basic client side JavaScript
 This lesson is mostly aimed at people who have never programmed before, but if there's interest, I'll do a supplemental lesson comparing Javascript to Java or C or something like that.
+  - A hint of additional CSS
   - Hello world and console use
   - Variables and arithmetic
   - Control Flow
@@ -28,12 +38,6 @@ This lesson is mostly aimed at people who have never programmed before, but if t
   - DOM interaction
   - Using git for version control and hosting your static site with Github Pages
   - Q&A  
-### 3. Advanced CSS & Layout Techniques
-This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.
-  - Common layout patterns
-  - CSS Preprocessors
-  - CSS Frameworks
-  - Other TBD
 ### 4. Client-Server communication, Node, get&put, templating
   - TBD
   - The Node Ecosystem & NPM
