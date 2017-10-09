@@ -28,7 +28,7 @@ This lesson is mostly aimed at people who have never programmed before, but if t
   - DOM interaction
   - Using git for version control and hosting your static site with Github Pages
   - Q&A  
-### 3. Advanced HTML, CSS, & Layout Techniques
+### 3. Advanced CSS & Layout Techniques
 This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.
   - Common layout patterns
   - CSS Preprocessors
