@@ -3,10 +3,13 @@
     /* background: black; */
     color: white;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 h1 {
     font-weight: normal;
     font-size: 80px;
-    text-shadow: 1px 1px black;
+}
+div{
+    color: greenyellow;
 }
