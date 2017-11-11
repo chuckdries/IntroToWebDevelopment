@@ -29,10 +29,11 @@
             background: white;
             margin: 0 0 10px 0;
             position: fixed;
+            padding: 1px;
         }
 
         #top h1 {
-            margin: 0 0 0 0;
+            margin: 24px 0 0 0;
         }
 
         nav {
@@ -60,13 +61,17 @@
             background: #eee;
         }
 
-        @media only screen and (max-device-width : 408px) {
-            #nav li{
+        @media screen and (max-width : 408px) {
+            nav li{
                 display: block !important;
             }
-            #nav{
-                float: none;
+            nav ul{
+                margin-top: 0px;
             }
+            #top h1{
+                padding-top: -10px;
+            }
+
         }
         #feature img {
             width: 60%;
@@ -137,8 +142,8 @@
 </head>
 
 <body>
-    <div id="top">&nbsp;
-        <div style="margin: auto; max-width: 800px;">&nbsp;
+    <div id="top">
+        <div style="padding: 1px; margin: auto; max-width: 800px;">
 
             <nav>
                 <ul>
