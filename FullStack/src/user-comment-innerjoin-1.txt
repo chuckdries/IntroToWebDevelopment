@@ -1,0 +1,6 @@
+SELECT 
+    COMMENTS.id as id,
+    USERS.name AS author,
+    COMMENTS.message AS message 
+FROM COMMENTS 
+INNER JOIN USERS on USERS.id = COMMENTS.user
