@@ -30,16 +30,19 @@ async function initDb() {
 app.get('/', async (req, res, next) => {
     try {
         const db = await initDb();
-        const comments = await db.all(
-            `SELECT 
+        const [comments, users] = await Promise.all([
+            db.all(
+                `SELECT 
                 COMMENTS.id as id,
                 USERS.name AS author,
                 COMMENTS.message AS message 
             FROM COMMENTS 
             INNER JOIN USERS on USERS.id = COMMENTS.user`
-        )
+            ), db.all(
+                `SELECT id, name FROM USERS`
+            )]);
         console.log(comments.length);
-        res.render('comments.njk', { comments });
+        res.render('comments.njk', { comments, users });
     } catch (err) {
         next(err);
     }
