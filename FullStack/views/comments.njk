@@ -45,15 +45,20 @@
         <p>{{ comment.message }}</p>
     </div>
     {% endfor %}
+    {% if user %}
     <form action="/comment" method="post" class="comment">
-        <h3>
+    <h3>{{user.name}}</h3>
+        {# <h3>
         <select name="userid" id="userid">
             {% for user in users %}
                 <option value="{{user.id}}">{{user.name}}</option>
             {% endfor %}
-        </select></h3>
+        </select></h3> #}
         <textarea name="message" id="message" placeholder="message"></textarea>
         <input type="submit" value="Submit">
     </form>
+    {% else %}
+    <a href="/user/login">Log in to comment</a>
+    {% endif %}
 </body>
 </html>

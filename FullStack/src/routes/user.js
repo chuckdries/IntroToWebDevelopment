@@ -19,7 +19,7 @@ function UserRouter(passport) {
     });
     router.post('/login',
         passport.authenticate('local', {
-            successRedirect: '/user',
+            successRedirect: '/',
             failureRedirect: '/user/login',
             failureFlash: false
         })
@@ -38,6 +38,9 @@ function UserRouter(passport) {
             }).then((result) => {
                 console.log(result);
                 res.redirect("/user/login")
+                // res.send(result);
+            }).catch((err) => {
+                res.send("user already exists");
             });
         });
 

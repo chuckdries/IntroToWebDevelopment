@@ -52,14 +52,12 @@ app.get('/', async (req, res, next) => {
                 `SELECT id, name FROM USERS`
             )]);
         console.log(comments.length);
-        res.render('comments.njk', { comments, users });
+        res.render('comments.njk', { comments, users, user: req.user });
     } catch (err) {
         next(err);
     }
 });
 app.post('/comment', async (req, res, next) => {
-    console.log("user", req.body.userid);
-    console.log("message", req.body.message);
     try {
         const db = await initDb();
         const result = await db.run(`
@@ -71,10 +69,9 @@ app.post('/comment', async (req, res, next) => {
             $user,
             $message
         );`, {
-                $user: req.body.userid,
+                $user: req.user.id,
                 $message: req.body.message
             })
-        // console.log("result", result);
         res.redirect('/');
     }
     catch (err) {

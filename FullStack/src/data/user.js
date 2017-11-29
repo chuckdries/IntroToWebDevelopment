@@ -1,4 +1,5 @@
 import sqlite from 'sqlite';
+import { error } from 'util';
 const dbPromise = sqlite.open('./test.db', { Promise }).then(async (db) => { await db.run("PRAGMA foreign_keys = ON;"); return db; });
 
 function UserDB() {
@@ -18,6 +19,9 @@ UserDB.prototype.findByEmail = async function ($email) {
 
 UserDB.prototype.register = async function (user) {
     console.log("db register user")
+    if (this.findByEmail(user.email)) {
+        throw "user already exists";
+    }
     const db = await dbPromise;
     const result = await db.run(`
     INSERT INTO USERS (

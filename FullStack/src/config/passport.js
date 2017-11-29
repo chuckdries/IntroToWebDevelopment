@@ -17,17 +17,18 @@ function PPConfig(passport) {
                         console.log("user not found");
                         return done(null, false, { message: "User not found" })
                     }
-                    return user;
-                }).then((user) => {
-                    bcrypt.compare(password, user.password)
-                        .then((result) => {
-                            if (!result) {
-                                console.log("incorrect password")
-                                return done(null, false, { message: "Incorrect password" });
-                            }
-                            console.log("success")
-                            return done(null, { id: user.id, name: user.name, email: user.email });
-                        })
+                    else {
+                        console.log("going to bcrypt", user);
+                        bcrypt.compare(password, user.password)
+                            .then((result) => {
+                                if (!result) {
+                                    console.log("incorrect password")
+                                    return done(null, false, { message: "Incorrect password" });
+                                }
+                                console.log("success")
+                                return done(null, { id: user.id, name: user.name, email: user.email });
+                            })
+                    }
                 })
                 .catch((err) => done(err));
         }
