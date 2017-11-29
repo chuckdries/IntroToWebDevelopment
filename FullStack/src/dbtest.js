@@ -3,14 +3,18 @@ import Promise from 'bluebird';
 import sqlite from 'sqlite';
 import nunjucks from 'nunjucks';
 import bodyparser from 'body-parser';
+import cookieparser from 'cookie-parser';
+import passport from 'passport';
+import session from 'express-session';
 
 const app = express();
 const dbPromise = sqlite.open('./test.db', { Promise });
 
-async function init() {
-    const db = await dbPromise;
-    await db.run("PRAGMA foreign_keys = ON;");
-}
+import UserRouter from './routes/user';
+import PPConfig from './config/passport';
+
+app.use(cookieparser());
+app.use(bodyparser.urlencoded({ extended: false }));
 
 nunjucks.configure('views', {
     autoescape: true,
@@ -19,7 +23,12 @@ nunjucks.configure('views', {
     watch: true
 })
 
-app.use(bodyparser.urlencoded());
+app.enable('trust proxy');
+app.use(session({ secret: 'bunnies' }));
+app.use(passport.initialize());
+app.use(passport.session());
+PPConfig(passport);
+app.use('/user', UserRouter(passport));
 
 async function initDb() {
     const db = await dbPromise;
@@ -29,6 +38,7 @@ async function initDb() {
 
 app.get('/', async (req, res, next) => {
     try {
+        console.log(req.user);
         const db = await initDb();
         const [comments, users] = await Promise.all([
             db.all(
@@ -72,5 +82,4 @@ app.post('/comment', async (req, res, next) => {
     }
 })
 
-app.enable('trust proxy');
 app.listen(8000);
