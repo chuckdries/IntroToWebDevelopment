@@ -7,8 +7,9 @@ Appendices, office hours, and supplemental lessons happen on Sundays or througho
 These are the bulk of the course. Unscripted, but mostly planned, tune in live on Twitch to ask questions and get the most out of these sessions.
 
 ### 1. Basic HTML and CSS (10/7)  
-  https://www.twitch.tv/videos/180406932  
-  (YT coming soon)
+Beginner? Start here.
+https://www.twitch.tv/videos/180406932  
+(YT coming soon)
   - Basic basic HTML: What is HTML? What is a tag? What is an attribute?
   - Essential tags: head, title, h1-h6, p, div, a
   - CSS basics: ID, Class, changing font sizes and colors
@@ -17,16 +18,29 @@ These are the bulk of the course. Unscripted, but mostly planned, tune in live o
   - More tags: Head, Link, Meta, span, ul, li, img
   - Using the Web Inspector to debug and learn
   - Q&A  
+### 2. Advanced CSS & Layout Techniques
+This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.
+  - Common layout patterns
+  - CSS `position` property
+  - CSS flexbox
+  - CSS grid
+  - CSS Preprocessors
+  - CSS Frameworks
+  - More practice making layouts from the real world
+  - Other TBD
 
-### 2. Advanced HTML and Basic client side JavaScript
+##I've changed my mind on lessons 2 and 3. More details to follow.
+### 3. Basic client side JavaScript
+This lesson is mostly aimed at people who have never programmed before, but if there's interest, I'll do a supplemental lesson comparing Javascript to Java or C or something like that.
+  - A hint of additional CSS
   - Hello world and console use
   - Variables and arithmetic
   - Control Flow
   - Functions
-  - DOM manipulation
+  - DOM interaction
   - Using git for version control and hosting your static site with Github Pages
   - Q&A  
-### 3. Client-Server communication, Node, get&put, templating
+### 4. Client-Server communication, Node, get&put, templating
   - TBD
   - The Node Ecosystem & NPM
   - Split into multiple lessons?

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <style>
+        body{
+            background: #eee;
+            color: #333;
+            max-width: 800px;
+            line-height: 1.6;
+            margin: auto;
+        }
+        .post{
+            padding: 0 1em;
+            margin-bottom: 2em;
+            background-color: #fff;
+            border: 1px solid #979797;
+            border-radius: 3px;
+        }
+        .post h4{   
+            margin-top:12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+    </div>
+
+    <script>
+        var postComponent = Vue.extend({
+            props: ["post"],
+            template: `
+            <div class="post">
+                <h4>{{post.title}}</h4>
+                <p>{{post.body}}</p>
+            </div>`
+        });
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                posts: []
+            },
+            template: `
+            <div>
+                <h1>Posts:</h1>
+                <post-component v-for="post in posts" :key="post.id" :post="post"></post-component>
+            </div>
+            `,
+            components: {
+                "post-component":postComponent
+            }
+        });
+
+        axios.get("https://jsonplaceholder.typicode.com/posts").then(function(response){
+            console.log(response.data);
+            app.posts = response.data;
+        })
+  
+    </script>
+</body>
+</html>

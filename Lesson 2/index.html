@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generic News Network</title>
+    <style>
+        /* go over external stylesheets */
+
+        body {
+            background: #eee;
+            margin: 0;
+        }
+
+        .section {
+            max-width: 800px;
+            /* text-align: center; */
+            padding: 10px;
+            margin: auto;
+            background: white;
+            border-bottom: 1px solid #333;
+        }
+
+        #top {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            background: white;
+            margin: 0 0 10px 0;
+            position: fixed;
+            padding: 1px;
+        }
+
+        #top h1 {
+            margin: 24px 0 0 0;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0px;
+            margin-top: 30px;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: rgb(0, 80, 155);
+            background: #eee;
+        }
+
+        @media screen and (max-width : 408px) {
+            nav li{
+                display: block !important;
+            }
+            nav ul{
+                margin-top: 0px;
+            }
+            #top h1{
+                padding-top: -10px;
+            }
+
+        }
+        #feature img {
+            width: 60%;
+        }
+
+        #feature img {
+            float: left;
+            margin-right: 30px;
+        }
+
+        .clearfix {
+            clear: both;
+            margin: 0;
+        }
+
+        #stories {
+            padding: 12px 0px 0px 0px;
+            max-width: 800px;
+            margin: 80px auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-content: flex-start;
+        }
+
+        .story {
+            /* width: 250px; */
+            border-radius: 5px;
+            overflow: hidden;
+            background: white;
+            padding-bottom: 10px;
+            box-shadow: 2px 2px 4px rgb(218, 218, 218);
+            flex-grow: 1;
+            flex-basis: 200px;
+            margin: 0px 10px 20px 10px;
+        }
+
+        .story:first-child {
+            flex-basis: 100%;
+        }
+
+        .story img {
+            width: 100%;
+        }
+
+        .story h2,
+        .story h3,
+        .story p {
+            margin: 5px 10px 5px 10px;
+        }
+
+        .story .text-container {
+            padding: 10px;
+        }
+
+        .image-overlay {
+            color: white;
+            background: rgba(1, 1, 1, 0.5);
+            position: absolute;
+            padding: 50px;
+            display: none;
+        }
+
+        .image-hoverable:hover .image-overlay {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div style="padding: 1px; margin: auto; max-width: 800px;">
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Style</a>
+                    </li>
+                    <li>
+                        <a href="#">Politics</a>
+                    </li>
+                    <li>
+                        <a href="#">Tech</a>
+                    </li>
+                    <li>
+                        <a href="#">Arts &amp; Entertainment</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>GNN</h1>
+        </div>
+    </div>
+       <!-- <div class="section" id="feature">
+        <img src="mountains.jpg" alt="">
+        <h2>This is a wonderful headline!</h2>
+        <h3>Subhead subhead subhead</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor magna, faucibus quis erat mollis, convallis maximus
+            leo. Morbi interdum condimentum nunc, at volutpat ante semper nec. Integer at aliquam enim.</p>
+        <div class="clearfix"></div>
+    </div> -->
+    &nbsp;
+    <div class="" id="stories">
+        <div class="story">
+            <div class="image-hoverable">
+
+                <div class="image-overlay">look at me!</div>
+                <img src="mountains.jpg" alt="">
+            </div>
+            <div class="text-container">
+
+                <h2>headline</h2>
+                <h3>subhead</h3>
+                <p>Morbi vel purus sit amet risus luctus fermentum in sed dolor. Nunc molestie in ligula id condimentum. Sed
+                    semper at nisi nec efficitur. Nam consectetur molestie erat. Cras quis lacus orci.</p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="mountains.jpg" alt="">
+            <div class="text-container">
+
+                <h2>headline</h2>
+                <h3>subhead</h3>
+                <p>Morbi vel purus sit amet risus luctus fermentum in sed dolor. Nunc molestie in ligula id condimentum. Sed
+                    semper at nisi nec efficitur. Nam consectetur molestie erat. Cras quis lacus orci.</p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="mountains.jpg" alt="">
+            <div class="text-container">
+
+                <h2>headline</h2>
+                <h3>subhead</h3>
+                <p>Morbi vel purus sit amet risus luctus fermentum in sed dolor. Nunc molestie in ligula id condimentum. Sed
+                    semper at nisi nec efficitur. Nam consectetur molestie erat. Cras quis lacus orci.</p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="mountains.jpg" alt="">
+            <div class="text-container">
+
+                <h2>headline</h2>
+                <h3>subhead</h3>
+                <p>Morbi vel purus sit amet risus luctus fermentum in sed dolor. Nunc molestie in ligula id condimentum. Sed
+                    semper at nisi nec efficitur. Nam consectetur molestie erat. Cras quis lacus orci.</p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="mountains.jpg" alt="">
+            <div class="text-container">
+
+                <h2>headline</h2>
+                <h3>subhead</h3>
+                <p>Morbi vel purus sit amet risus luctus fermentum in sed dolor. Nunc molestie in ligula id condimentum. Sed
+                    semper at nisi nec efficitur. Nam consectetur molestie erat. Cras quis lacus orci.</p>
+            </div>
+        </div>
+        <div class="story">
+            <img src="mountains.jpg" alt="">
+            <div class="text-container">
+
+                <h2>headline</h2>
+                <h3>subhead</h3>
+                <p>Morbi vel purus sit amet risus luctus fermentum in sed dolor. Nunc molestie in ligula id condimentum. Sed
+                    semper at nisi nec efficitur. Nam consectetur molestie erat. Cras quis lacus orci.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
