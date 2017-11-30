@@ -7,9 +7,8 @@ Appendices, office hours, and supplemental lessons happen on Sundays or througho
 These are the bulk of the course. Unscripted, but mostly planned, tune in live on Twitch to ask questions and get the most out of these sessions.
 
 ### 1. Basic HTML and CSS (10/7)  
-Beginner? Start here.
-https://www.twitch.tv/videos/180406932  
-(YT coming soon)
+Beginner? Start here.  
+https://youtu.be/S060b-fC7X8  
   - Basic basic HTML: What is HTML? What is a tag? What is an attribute?
   - Essential tags: head, title, h1-h6, p, div, a
   - CSS basics: ID, Class, changing font sizes and colors
@@ -19,17 +18,18 @@ https://www.twitch.tv/videos/180406932
   - Using the Web Inspector to debug and learn
   - Q&A  
 ### 2. Advanced CSS & Layout Techniques
-This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.
+This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.  
+I decided to defer some of these to a later lesson.  
+Youtube link coming soon.
   - Common layout patterns
   - CSS `position` property
   - CSS flexbox
-  - CSS grid
-  - CSS Preprocessors
-  - CSS Frameworks
+  - ~~CSS grid~~
+  - ~~CSS Preprocessors~~
+  - ~~CSS Frameworks~~
   - More practice making layouts from the real world
-  - Other TBD
 
-##I've changed my mind on lessons 3 and 4. More details to follow.
+## I've changed my mind on lessons 3 and 4. More details to follow.
 ### 3. Basic client side JavaScript
 This lesson is mostly aimed at people who have never programmed before, but if there's interest, I'll do a supplemental lesson comparing Javascript to Java or C or something like that.
   - A hint of additional CSS
