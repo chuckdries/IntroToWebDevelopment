@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Comment System</title>
+    <style>
+        body{
+            max-width: 800px;
+            margin: 10px auto;
+            background: #eee;
+            color: #333;
+            line-height: 1.6;
+        }
+        .comment{
+            margin: 1em 0;
+            padding: 1px 1em;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background: #fafafa;
+            position: relative;
+        }
+        {# .comment input[type="text"]{ #}
+        .comment textarea{
+            margin: 0;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 5em;
+        }
+        .comment input[type="submit"]{
+            {# position: absolute; #}
+            {# float: right; #}
+            {# bottom: 2px; #}
+            display: block;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body>
+<h1>A simple comment system</h1>
+    {% for comment in comments %}
+    <div class="comment">
+        <h3>{{ comment.author }}</h3>
+        <p>{{ comment.message }}</p>
+    </div>
+    {% endfor %}
+    {% if user %}
+    <form action="/comment" method="post" class="comment">
+    <h3>{{user.name}}</h3>
+        {# <h3>
+        <select name="userid" id="userid">
+            {% for user in users %}
+                <option value="{{user.id}}">{{user.name}}</option>
+            {% endfor %}
+        </select></h3> #}
+        <textarea name="message" id="message" placeholder="message"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    {% else %}
+    <a href="/user/login">Log in to comment</a>
+    {% endif %}
+</body>
+</html>

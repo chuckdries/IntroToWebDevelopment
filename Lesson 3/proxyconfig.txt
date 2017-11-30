@@ -1,0 +1,6 @@
+letsencrypt container config in /mnt/user/system/appdata/letsencrypt/nginx/site-confs
+
+url mappings: 
+ - test.server.chuckdries.com/ => 10.10.11.153:8000
+ - test.server.chuckdries.com/zero => 10.10.11.153:8080
+ - test.server.chuckdries.com/one => 10.10.11.153:8081
