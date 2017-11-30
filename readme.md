@@ -77,3 +77,5 @@ These are additional topics I want to cover or feel like needed more depth. I ca
  This whole course is very experimental, thank you for your patience and thank you for your feedback! I can't wait to see what this becomes.
 
 `*`Phoenix time is MST, but we don't observe Daylight Savings time. Frankly I've lived here my whole life so I have no idea when we're synced with MST and when we're synced with PST, so you should google it.
+ 
+1. Recreating a website from the real world: https://youtu.be/5IJlKrSUDms
