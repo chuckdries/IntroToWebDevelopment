@@ -30,6 +30,7 @@ Youtube link coming soon.
   - More practice making layouts from the real world
 
 ## I've changed my mind on lessons 3 and 4. More details to follow.
+
 ### 3. Basic client side JavaScript
 This lesson is mostly aimed at people who have never programmed before, but if there's interest, I'll do a supplemental lesson comparing Javascript to Java or C or something like that.
   - A hint of additional CSS
