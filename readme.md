@@ -1,15 +1,14 @@
 # Welcome
 to ***Intro to Web Development, Twitch Edition***  
-Tune in for primary lessons Saturdays at 9am MST (Phoenix time)* at http://twitch.tv/chuckletmilk  
+Tune in for primary lessons Saturdays at 10am MST (Phoenix time)* at http://twitch.tv/chuckletmilk  
 Appendices, office hours, and supplemental lessons happen on Sundays or throughout the week.
 
 ## Lessons
 These are the bulk of the course. Unscripted, but mostly planned, tune in live on Twitch to ask questions and get the most out of these sessions.
 
 ### 1. Basic HTML and CSS (10/7)  
-Beginner? Start here.
-https://www.twitch.tv/videos/180406932  
-(YT coming soon)
+Beginner? Start here.  
+https://youtu.be/S060b-fC7X8  
   - Basic basic HTML: What is HTML? What is a tag? What is an attribute?
   - Essential tags: head, title, h1-h6, p, div, a
   - CSS basics: ID, Class, changing font sizes and colors
@@ -19,15 +18,16 @@ https://www.twitch.tv/videos/180406932
   - Using the Web Inspector to debug and learn
   - Q&A  
 ### 2. Advanced CSS & Layout Techniques
-This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.
+This lesson will be great if you're already familiar with the syntax of HTML and ready to dive into usage in the real world.  
+I decided to defer some of these to a later lesson.  
+Youtube link coming soon.
   - Common layout patterns
   - CSS `position` property
   - CSS flexbox
-  - CSS grid
-  - CSS Preprocessors
-  - CSS Frameworks
+  - ~~CSS grid~~
+  - ~~CSS Preprocessors~~
+  - ~~CSS Frameworks~~
   - More practice making layouts from the real world
-  - Other TBD
 
 ## I've changed my mind on lessons 3 and 4. More details to follow.
 
@@ -78,3 +78,5 @@ These are additional topics I want to cover or feel like needed more depth. I ca
  This whole course is very experimental, thank you for your patience and thank you for your feedback! I can't wait to see what this becomes.
 
 `*`Phoenix time is MST, but we don't observe Daylight Savings time. Frankly I've lived here my whole life so I have no idea when we're synced with MST and when we're synced with PST, so you should google it.
+ 
+1. Recreating a website from the real world: https://youtu.be/5IJlKrSUDms
