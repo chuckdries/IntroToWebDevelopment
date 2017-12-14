@@ -1,8 +1,10 @@
 INSERT INTO POSTS (
                       user,
-                      message
+                      message,
+                      date
                   )
                   VALUES (
-                      'user',
-                      'message'
+                      '2',
+                      'Hello from Carter again!!',
+                      strftime('%s','now')
                   );
