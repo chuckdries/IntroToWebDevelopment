@@ -1,8 +1,0 @@
-INSERT INTO COMMENTS (
-                         user,
-                         message
-                     )
-                     VALUES (
-                         '1',
-                         'This is just a friendly hello ;)'
-                     );

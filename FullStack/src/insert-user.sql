@@ -1,12 +1,10 @@
 INSERT INTO USERS (
                       name,
                       email,
-                      username,
                       password
                   )
                   VALUES (
-                      'name',
-                      'email',
-                      'username',
-                      'password'
+                      'chuck',
+                      'chuck@chuckdries.com',
+                      'plaintextpassword'
                   );

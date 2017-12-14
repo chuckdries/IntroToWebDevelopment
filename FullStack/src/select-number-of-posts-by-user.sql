@@ -1,0 +1,6 @@
+SELECT 
+    USERS.name AS author,
+    COUNT(POSTS.id) AS posts
+FROM POSTS 
+LEFT JOIN USERS on USERS.id = POSTS.user
+GROUP BY USERS.name
