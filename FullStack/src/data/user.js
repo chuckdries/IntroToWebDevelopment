@@ -1,5 +1,6 @@
 import sqlite from 'sqlite';
 import { error } from 'util';
+import bcrypt from 'bcrypt';
 const dbPromise = sqlite.open('./test.db', { Promise }).then(async (db) => { await db.run("PRAGMA foreign_keys = ON;"); return db; });
 
 function UserDB() {
@@ -15,6 +16,10 @@ UserDB.prototype.findByEmail = async function ($email) {
     const db = await dbPromise;
     const user = await db.get("SELECT * FROM USERS WHERE email = $email", { $email });
     return user;
+}
+UserDB.prototype.isValidPassword = async function (user, password) {
+    console.log("Checking password for user", username);
+    return bcrypt.compare(password, user.password);
 }
 
 UserDB.prototype.register = async function (user) {
@@ -42,4 +47,4 @@ UserDB.prototype.register = async function (user) {
     return result
 }
 
-module.exports = UserDB;
+export default new UserDB();
